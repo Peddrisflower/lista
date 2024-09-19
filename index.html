@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleslogin/stylelo.css">
+    <title>Tela de login</title>
+    <style>
+        body {
+            width: 100%;
+            min-height: 100%;
+            background-image: url('img/foto\ fundo.gif');
+            margin: 0;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100%;
+            background-color: #000; 
+        }
+    </style>
+</head>
+<body>
+
+    <header id="nav">
+        <img src="img/lotus-flower.png" alt="">
+        <nav>
+            <div class="list">
+                <ol>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="html/lista.html">Lista</a></li>
+                    <li><a href="html/contato.html">Contato</a></li>
+                </ol>
+            </div>
+        </nav>
+    </header>
+
+    <!--Inicio main-->
+    <main id="inicio">
+        <div class="inicio_container">
+            <form action="" method="get" class="inicio_container_login">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome completo">
+
+                <label for="e-mail">E-mail</label>
+                <input type="email" name="e-mail" id="e-mail" placeholder="E-mail">
+
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+
+                <a href="html/lista.html"><input id="container_form_button" type="button" value="Login"></a>
+            </form>
+        </div>
+    </main>
+    <!--Fim main-->
+
+</body>
+</html>

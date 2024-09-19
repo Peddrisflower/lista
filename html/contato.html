@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+           
+            
+        }
+        header {
+            background-color: #333;
+            color: #b19cd9;
+            text-align: center;
+            padding: 1.5em 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        .container {
+            width: 50%;
+            margin: 3em auto;
+            background-color: #2a2a2a;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+        }
+        h2 {
+            text-align: center;
+            color: #b19cd9;
+            margin-bottom: 1.5em;
+            font-size: 2em;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            padding: 15px;
+            margin-bottom: 1.5em;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1em;
+            background-color: #333;
+            color: #e0e0e0;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border: 2px solid #b19cd9;
+        }
+        textarea {
+            resize: vertical;
+            height: 150px;
+        }
+        button {
+            padding: 15px;
+            background-color: #b19cd9;
+            color: #1e1e1e;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.2em;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #b19cd9;
+        }
+        footer {
+            background-color: #333;
+            color: #b19cd9;
+            text-align: center;
+            padding: 1.5em 0;
+            position: relative;
+            width: 100%;
+            margin-top: 2em;
+        }
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+        .social-links {
+            margin-top: 1em;
+        }
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #b19cd9;
+            font-size: 1.5em;
+        }
+        .social-links a:hover {
+            color: #b19cd9;
+        }
+
+        .headr a{
+            list-style: none;
+
+color: #b19cd9;  
+            text-decoration: none;
+            list-style: none;
+}
+       
+    </style>
+</head>
+<body>
+
+    <header class="headr" >
+        <h1><a href="lista.html">Fale Conosco</a></h1>
+    </header>
+    
+
+
+    <div class="container">
+        <h2>Fale Conosco</h2>
+        <form action="#" method="post">
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu Email" required>
+            <input type="text" placeholder="Assunto" required>
+            <textarea placeholder="Sua Mensagem" required></textarea>
+            <button type="submit" >Enviar Mensagem<a href="finalizado.html"></a></button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Seu Site. Todos os direitos reservados.</p>
+        <div class="social-links">
+            <a href="https://discord.com" target="_blank">Discord</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+</body>
+</html>

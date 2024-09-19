@@ -1,0 +1,117 @@
+/* Estilo para o cabeçalho */
+#nav {
+    width: 100%;
+    max-width: 1550px;
+    background-color: rgba(50, 50, 50, 0.8); /* Fundo preto translúcido */
+    padding: 20px;
+    margin: 6px auto;
+    color: #a1a1ff; /* Roxo claro */
+    border-radius: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav img {
+    width: 80px;
+}
+
+
+.list {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list ol {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.list li {
+    margin: 0 20px;
+    text-align: center;
+}
+
+.list a {
+    font-size: 1.1rem;
+    color: #a1a1ff; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.list a:hover {
+    color: #d1b3ff; 
+}
+
+
+.inicio_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin-top: 10%;
+}
+
+.inicio_container_login {
+    background-color: rgba(0, 0, 0, 0.8); 
+    padding: 40px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
+}
+
+.inicio_container_login label {
+    color: #d1b3ff;
+    font-size: 1rem;
+}
+
+.inicio_container_login input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #a1a1ff;
+    background-color: #333;
+    color: #fff;
+}
+
+#container_form_button {
+    background-color: #a1a1ff; 
+    color: #000;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#container_form_button:hover {
+    background-color: #d1b3ff; 
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .list ol {
+        flex-direction: column;
+    }
+
+    .list li {
+        margin: 10px 0;
+    }
+
+    .inicio_container_login {
+        width: 90%;
+        padding: 20px;
+    }
+}

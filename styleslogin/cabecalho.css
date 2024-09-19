@@ -1,0 +1,148 @@
+/* Cabeçalho */
+#cabecalho {
+    width: 100%;
+    background-color: #1a1a1a;
+    padding: 20px;
+    margin: 6px 0;
+    color: #b19cd9;
+    border-radius: 12px;
+    border: 2px solid #b19cd9;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cabecalho img {
+    width: 60px;
+}
+
+.list_f {
+    display: flex;
+    gap: 20px;
+}
+
+.list_f a {
+    font-size: 1rem;
+    color: #b19cd9;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.list_f a:hover {
+    color: #fff;
+}
+
+/* Título */
+.titoo {
+    text-align: center;
+    color: #b19cd9;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    animation: colorShift 2s infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes colorShift {
+    0% { color: #b19cd9; }
+    50% { color: #d484ec; }
+    100% { color: #b19cd9; }
+}
+
+/* Caixa principal para tarefas e controle */
+.main-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Seção de inserção e controle das tarefas */
+.task-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    color: #fff;
+    width: 40%;
+}
+
+.task-controls input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #222;
+    color: #fff;
+}
+
+button {
+    font-family: 'Courier New', Courier, monospace;
+    background-image: linear-gradient(to right, #6a0dad 0%, #b19cd9 51%, #6a0dad 100%);
+    padding: 10px 30px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: background-position 0.5s;
+}
+
+button:hover {
+    background-position: right center;
+    color: #fff;
+}
+
+/* Remover item específico */
+.diviho input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #222;
+    color: #fff;
+}
+
+/* Lista de tarefas */
+.div_list {
+    width: 50%;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.div_list ol {
+    color: #b19cd9;
+    padding: 0;
+    list-style-position: inside; 
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center; 
+}
+
+/* Responsivo simples */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .task-controls, .div_list {
+        width: 100%;
+    }
+}
