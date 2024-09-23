@@ -1,0 +1,29 @@
+.rodape{
+    width: 100%;
+    max-width: 1550px;
+    border-radius: 12px;
+   
+}
+
+.div_rodape{
+    width: 100%;
+    max-width: 1550px;
+    background-color: #cccccc80;
+    padding:20px;
+    border-radius: 20px;
+    display: flex;
+    margin-top: -10%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+   
+}
+
+.div_rodape img{
+    width: 70px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: -10%;
+    
+
+}
